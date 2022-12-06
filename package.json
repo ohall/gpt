@@ -1,0 +1,24 @@
+{
+  "name": "node-gpt-cli",
+  "version": "1.0.0",
+  "description": "A NodeJS GPT3 CLI client",
+  "main": "index.js",
+  "bin": {
+    "gpt": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohall/gpt.git"
+  },
+  "keywords": [
+    "gpt3",
+    "openai",
+    "cli"
+  ],
+  "author": "Oakley Hall <oakley349@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohall/gpt/issues"
+  },
+  "homepage": "https://github.com/ohall/gpt#readme"
+}
