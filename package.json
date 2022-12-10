@@ -4,7 +4,7 @@
   "description": "A NodeJS GPT3 CLI client",
   "main": "index.js",
   "bin": {
-    "gpt": "./index.js"
+    "gpt3": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,10 @@
     "openai",
     "cli"
   ],
+  "scripts": {
+    "postinstall": "./scripts/writeconfig.js",
+    "uninstall": "rm ~/.node-gpt-config.json"
+  },
   "author": "Oakley Hall <oakley349@gmail.com>",
   "license": "MIT",
   "bugs": {
