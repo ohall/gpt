@@ -19,7 +19,10 @@
     "postinstall": "./scripts/writeconfig.js",
     "uninstall": "rm ~/.node-gpt-config.json"
   },
-  "author": "Oakley Hall <oakley349@gmail.com>",
+  "author": {
+   "name":"Oakley Hall",
+   "email": "oakley349@gmail.com" 
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ohall/gpt/issues"
