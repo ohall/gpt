@@ -1,6 +1,6 @@
 {
   "name": "node-gpt-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS GPT3 CLI client",
   "main": "index.js",
   "bin": {
