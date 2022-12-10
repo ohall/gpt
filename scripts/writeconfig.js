@@ -3,6 +3,7 @@
 const fs = require('fs');
 
 const data = {
+  url: 'https://api.openai.com/v1/completions',
   model: 'text-davinci-003',
   max_tokens: 2048,
   temperature: 0  

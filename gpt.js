@@ -10,15 +10,15 @@ try {
 
 const go = async function (prompt) {
   console.log(prompt);
-  
+  const { url, ...remainingConfigs } = config;
   const headers = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
   };
   
   const method = 'POST';
-  const body = JSON.stringify({ ...config, prompt });
-  const request = await fetch('https://api.openai.com/v1/completions', { headers, method, body });
+  const body = JSON.stringify({ ...remainingConfigs, prompt });
+  const request = await fetch(url, { headers, method, body });
   const response = await request.json();
 
   console.log(response.choices[0].text);  
