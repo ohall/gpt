@@ -6,7 +6,7 @@
 ```npm i node-gpt-cli```
 
 ### Add your API key 
-Create OpenAI [API key](https://beta.openai.com/account/api-keys) and assignt it to `OPENAI_API_KEY` environment variable
+Create OpenAI [API key](https://beta.openai.com/account/api-keys) and assign it to `OPENAI_API_KEY` environment variable
 ```OPENAI_API_KEY=<KEY>```
 
 ### Pass prompts to it
