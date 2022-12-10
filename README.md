@@ -1,6 +1,6 @@
-# gpt
-
-### Requires [Node 18+](https://nodejs.org/en/blog/announcements/v18-release-announce/)
+# Node gpt3 CLI
+A very simple cli tool for gpt3 prompts written in javascript.
+Requires [Node 18+](https://nodejs.org/en/blog/announcements/v18-release-announce/)
 
 ### Install 
 ```npm i node-gpt-cli```
