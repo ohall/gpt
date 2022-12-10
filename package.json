@@ -1,6 +1,6 @@
 {
   "name": "node-gpt-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A NodeJS GPT3 CLI client",
   "main": "index.js",
   "bin": {
@@ -20,8 +20,8 @@
     "uninstall": "rm ~/.node-gpt-config.json"
   },
   "author": {
-   "name":"Oakley Hall",
-   "email": "oakley349@gmail.com" 
+    "name": "Oakley Hall",
+    "email": "oakley349@gmail.com"
   },
   "license": "MIT",
   "bugs": {
