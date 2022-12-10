@@ -11,7 +11,7 @@ const go = async function (prompt) {
   const body = JSON.stringify({
     model: 'text-davinci-003',
     prompt,
-    max_tokens: 100,
+    max_tokens: 2048,
     temperature: 0  
   });
   
@@ -22,5 +22,5 @@ const go = async function (prompt) {
   console.log(response.choices[0].text);
   
 }
-
+promptWords = process.argv.slice(2);
 go(promptWords.join(' '))
