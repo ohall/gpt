@@ -20,7 +20,7 @@ const go = async function (prompt) {
   const request = await fetch(url, { headers, method, body });
   const response = await request.json();
 
-  console.log(response.choices[0].text);  
+  process.stdout.write(response.choices[0].text.trim());  
 }
 promptWords = process.argv.slice(2)
 go(promptWords.join(' '))
