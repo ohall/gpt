@@ -9,7 +9,6 @@ try {
 }
 
 const go = async function (prompt) {
-  console.log(prompt);
   const { url, ...remainingConfigs } = config;
   const headers = {
     'Content-Type': 'application/json',
