@@ -1,20 +1,23 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
+import { writeFile } from 'fs/promises';
 
 const data = {
-  url: 'https://api.openai.com/v1/completions',
-  model: 'text-davinci-003',
+  url: 'https://api.openai.com/v1/chat/completions',
+  model: 'gpt-4-turbo-preview',
   max_tokens: 2048,
-  temperature: 0  
+  temperature: 0,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0
 };
 
 const filePath = `${process.env.HOME}/.node-gpt-config.json`;
 
-fs.writeFile(filePath, JSON.stringify(data), err => {
-  if (err) {
-    console.error(`An error occurred while writing to ${filePath}: ${err}`);
-  } else {
-    console.log(`JSON data successfully written to ${filePath}`);
-  }
-});
+try {
+  await writeFile(filePath, JSON.stringify(data, null, 2));
+  console.log(`Configuration successfully written to ${filePath}`);
+} catch (error) {
+  console.error(`Error writing configuration to ${filePath}: ${error.message}`);
+  process.exit(1);
+}
