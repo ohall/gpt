@@ -20,12 +20,12 @@ export OPENAI_ORG_ID=<YOUR-ORG-ID>
 
 ### Pass prompts to it
 ```bash
-gpt3 what is best in life?
+gpt4 what is best in life?
 ```
 
 ### Pipe in prompts
 ```bash
-echo "what is my name?" | gpt3
+echo "what is my name?" | gpt4
 ```
 
 ### Configuration
