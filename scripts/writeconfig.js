@@ -6,10 +6,10 @@ const data = {
   url: 'https://api.openai.com/v1/chat/completions',
   model: 'gpt-4-turbo-preview',
   max_tokens: 2048,
-  temperature: 0,
-  top_p: 1,
-  frequency_penalty: 0,
-  presence_penalty: 0
+  temperature: 0.7,
+  top_p: 0.9,
+  frequency_penalty: 0.3,
+  presence_penalty: 0.3
 };
 
 const filePath = `${process.env.HOME}/.node-gpt-config.json`;

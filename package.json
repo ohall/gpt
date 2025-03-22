@@ -1,6 +1,6 @@
 {
   "name": "node-gpt-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A NodeJS GPT-4 CLI client",
   "main": "index.js",
   "type": "module",
