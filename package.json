@@ -21,7 +21,11 @@
   ],
   "scripts": {
     "postinstall": "./scripts/writeconfig.js",
-    "uninstall": "rm ~/.node-gpt-config.json"
+    "uninstall": "rm ~/.node-gpt-config.json",
+    "dev": "node --trace-warnings index.js",
+    "dev:debug": "node --inspect --trace-warnings index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "author": {
     "name": "Oakley Hall",
@@ -31,5 +35,12 @@
   "bugs": {
     "url": "https://github.com/ohall/gpt/issues"
   },
-  "homepage": "https://github.com/ohall/gpt#readme"
+  "homepage": "https://github.com/ohall/gpt#readme",
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0"
+  }
 }
